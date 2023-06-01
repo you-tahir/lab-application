@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HW</title>
+</head>
+<body>
+  <h1>HOMEWORK4</h1>
+  <h3>Form</h3>
+  
+  <form action="form-handler.php" method="get" target="_blank">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <button type="submit">Submit (GET)</button>
+  </form>
+
+  <form action="form-handler.php" method="post" target="_self">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <button type="submit">Submit (POST)</button>
+  </form>
+  <h3>Part of canvas</h3>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+  
+  <canvas id="myCanvas" width="200" height="150"></canvas>
+
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById("myCanvas");
+    
+    if (canvas.getContext) {
+      // Get the 2D rendering context
+      var ctx = canvas.getContext("2d");
+      
+      // Set the fill color
+      ctx.fillStyle = "green";
+      
+      // Draw a rectangle
+      ctx.fillRect(50, 50, 70, 80);
+      
+      // Set the stroke color
+      ctx.strokeStyle = "red";
+      ctx.lineWidth = 5;
+      
+      // Draw a rectangle outline
+      ctx.strokeRect(70, 40, 50, 60);
+    
+      // Set the text style
+      ctx.fillStyle = "black";
+      ctx.font = "20px Arial";
+
+    }
+  </script>
+</body>
+</html>
