@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Application</title>
+</head>
+<body>
+<h1>Canvas Application Form</h1>
+
+<form action="target1.php" method="get" target="_blank">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="color">Favorite Color:</label>
+    <input type="text" id="color" name="color" required><br><br>
+
+    <input type="submit" value="Submit with GET">
+</form>
+
+<br><hr><br>
+
+<form action="target2.php" method="post" target="_self">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <input type="submit" value="Submit with POST">
+</form>
+</body>
+</html>
